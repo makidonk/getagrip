@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kom igång - Getagrip klättergym</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- fonts laddas ner från google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="index.html"
+        ><img src="assets/getagrip.svg" id="header-logo" alt="Getagrip" />
+      </a>
+      <nav>
+        <a href="komigang.html" class="selected">Kom igång</a>
+        <a href="priser.html">Priser</a>
+        <a href="omoss.html">Om oss</a>
+        <a href="grupper.html">Grupper&Kurser</a>
+        <a href="yoga.html">Yoga</a>
+        <a href="kontakt.html">Kontakt</a>
+      </nav>
+    </header>
+    <div class="hero">
+      <img
+        src="assets/komigang.png"
+        alt="två tjejer i sele och rep som ska klättra"
+        class="hero-img komigang"
+      />
+      <div class="overlay">
+        <h2 class="hero-title">Klättring för alla</h2>
+      </div>
+    </div>
+
+    <div class="page-content">
+      <div class="splitPage">
+        <div class="left">
+          <div class="textBlock">
+            <h1>Såhär funkar det!</h1>
+            <p>
+              Kom förbi när som helst under öppettiderna — du behöver inte boka.
+              I receptionen löser du ditt dagspass och lånar skor. Ta med
+              träningskläder du kan röra dig i, och gärna en vattenflaska.
+            </p>
+            <p>
+              Innan du börjar får du en kort genomgång av någon ur personalen.
+              Vi går igenom hur du faller på mattan utan att slå dig, vad
+              färgerna på greppen betyder och vilka regler som gäller i hallen.
+              Det tar ungefär tjugo minuter och är gratis.
+            </p>
+            <p>
+              Sen är det bara att klättra. Börja på de lättaste lederna även om
+              de ser enkla ut — det är där du lär dig stå på fötterna.
+              Personalen finns i hallen hela dagen, så peta på dem så fort du
+              kör fast.
+            </p>
+          </div>
+          <div class="textBlock">
+            <h2>Ytterligare utveckling</h2>
+            <p>
+              Vill du klättra med rep och säkra en kompis går du vår repkurs.
+              Den är en kväll lång, kostar 450 kr och ger dig ett klätterkort
+              som gäller på gym i hela Sverige.
+            </p>
+          </div>
+        </div>
+        <div class="right">
+          <!-- jag använder mig av <span> istället för <p> för man får inte ha p inuti <summary> -->
+          <div class="accordion">
+            <details name="faq">
+              <summary>
+                <span>Måste jag kunna något innan jag kommer?</span>
+                <img src="assets/arrow.svg" class="arrow" alt="pil" />
+              </summary>
+              <p>
+                Nej. De flesta som kommer hit första gången har aldrig klättrat.
+                Du får en genomgång av personalen när du kommer, och den räcker
+                för att du ska kunna bouldra på egen hand.
+              </p>
+            </details>
+            <details name="faq">
+              <summary>
+                <span>Vad ska jag ha på mig?</span>
+                <img src="assets/arrow.svg" class="arrow" alt="pil" />
+              </summary>
+              <p>
+                Vanliga träningskläder som du kan sträcka dig i. Undvik hårda
+                byxor och ta av ringar och armbandsur. Långt hår sätter du upp.
+              </p>
+            </details>
+            <details name="faq">
+              <summary>
+                <span>Behöver jag egen utrustning?</span>
+                <img src="assets/arrow.svg" class="arrow" alt="pil" />
+              </summary>
+              <p>
+                Nej, du hyr klätterskor för 40 kr och kalk för 15 kr i
+                receptionen. Har du månadskort eller 10-kort ingår både skor och
+                kalk.
+              </p>
+            </details>
+            <details name="faq">
+              <summary>
+                <span>Måste jag ha med en kompis?</span>
+                <img src="assets/arrow.svg" class="arrow" alt="pil" />
+              </summary>
+              <p>
+                Inte för boulder eller autobelay — det går alldeles utmärkt att
+                komma ensam. Vill du klättra på topprep behöver ni vara två som
+                båda har klätterkort.
+              </p>
+            </details>
+            <details name="faq">
+              <summary>
+                <span>Hur gammal måste man vara?</span>
+                <img src="assets/arrow.svg" class="arrow" alt="pil" />
+              </summary>
+              <p>
+                Från 14 år klättrar du själv. Är du yngre är du välkommen i
+                sällskap av en vuxen, eller på någon av våra barn- och
+                ungdomsgrupper.
+              </p>
+            </details>
+            <details name="faq">
+              <summary>
+                <span>Behöver jag boka i förväg?</span>
+                <img src="assets/arrow.svg" class="arrow" alt="pil" />
+              </summary>
+              <p>
+                Nej, du kan bara dyka upp. Kurser och yogaklasser bokar du
+                däremot i förväg eftersom platserna är begränsade.
+              </p>
+            </details>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footerContent">
+        <div class="footerCol">
+          <h3>Öppettider</h3>
+          <p>Mån-fre 07-22<br />Lör-sön 09-20</p>
+        </div>
+        <div class="footerCol">
+          <h3>Hitta hit</h3>
+          <p>Kabelvägen 4<br />553 02 Jönköping</p>
+        </div>
+        <div class="footerCol">
+          <h3>Kontakta oss</h3>
+          <p>036-12 34 56<br />hej@getagrip.se</p>
+        </div>
+      </div>
+      <p class="footerBottom">Getagrip® Klättergym</p>
+    </footer>
+  </body>
+</html>
