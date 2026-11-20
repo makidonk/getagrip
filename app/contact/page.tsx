@@ -12,7 +12,7 @@ export default function Page() {
       <div className="pt-[140px] min-[700px]:pt-[70px]"></div>
       <div className="flex flex-col gap-[60px] px-5 py-10 min-[700px]:gap-[90px] min-[700px]:px-[30px] min-[700px]:py-[60px]">
         <h1>Kontakt</h1>
-        <div className="flex w-full flex-col gap-5 min-[700px]:grid min-[700px]:grid-cols-[1fr_1fr_40%]">
+        <div className="list-columns">
           <div className="flex flex-col gap-5">
             <ListItem title="Tveka inte att höra av dig!">
               <p className="[&_a]:text-[20px] [&_a]:underline">
