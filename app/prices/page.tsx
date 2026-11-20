@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import SiteHeader from "../site-header";
+import SiteHeader from "../components/site-header";
 
 export const metadata: Metadata = { title: "Priser - Getagrip klättergym" };
 

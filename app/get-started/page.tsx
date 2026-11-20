@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element -- Keep the original image markup and CSS sizing. */
 import type { Metadata } from "next";
-import SiteHeader from "../site-header";
+import SiteHeader from "../components/site-header";
 
 export const metadata: Metadata = { title: "Kom igång - Getagrip klättergym" };
 
