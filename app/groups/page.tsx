@@ -1,9 +1,11 @@
 /* eslint-disable @next/next/no-img-element -- Keep the original image markup and CSS sizing. */
 import type { Metadata } from "next";
 import Link from "next/link";
-import SiteHeader from "../components/site-header";
+import SiteHeader from "../components/SiteHeader";
 
-export const metadata: Metadata = { title: "Grupper & kurser - Getagrip klättergym" };
+export const metadata: Metadata = {
+  title: "Grupper & kurser - Getagrip klättergym",
+};
 
 export default function Page() {
   return (
@@ -24,8 +26,8 @@ export default function Page() {
 
       <div className="page-content">
         <p className="text-intro">
-          Vill du klättra med samma gäng varje vecka, lära dig säkra med rep eller
-          fira födelsedag på väggen? Här finns allt vi har utöver vanlig
+          Vill du klättra med samma gäng varje vecka, lära dig säkra med rep
+          eller fira födelsedag på väggen? Här finns allt vi har utöver vanlig
           klättring. Anmäl dig direkt under den aktivitet du är sugen på.
         </p>
 
@@ -40,15 +42,20 @@ export default function Page() {
               />
               <p>
                 För dig som är ny eller har klättrat några gånger och vill komma
-                igång på riktigt. Vi går igenom fotteknik, hur du vilar på väggen
-                och hur du läser ett problem.
+                igång på riktigt. Vi går igenom fotteknik, hur du vilar på
+                väggen och hur du läser ett problem.
               </p>
               <p>
-                Gruppen är max tolv personer och ses två gånger i veckan med samma
-                ledare hela terminen.
+                Gruppen är max tolv personer och ses två gånger i veckan med
+                samma ledare hela terminen.
               </p>
               <p className="card-info">
-                Tisdagar 19.15<br />Söndagar 15.00<br /><br />Pris 1 700 kr/termin
+                Tisdagar 19.15
+                <br />
+                Söndagar 15.00
+                <br />
+                <br />
+                Pris 1 700 kr/termin
               </p>
               <h4>Anmälan</h4>
               <form className="signupForm">
@@ -74,12 +81,17 @@ export default function Page() {
                 alt="En liten tjej står på grepp på väggen"
               />
               <p>
-                För barn 7-12 år. Vi klättrar både boulder och topprep, leker och
-                lär oss säkerhet på ett sätt som känns roligt.
+                För barn 7-12 år. Vi klättrar både boulder och topprep, leker
+                och lär oss säkerhet på ett sätt som känns roligt.
               </p>
               <p>Föräldrar behöver inte vara med under passet.</p>
               <p className="card-info">
-                Onsdagar 17.00<br />Lördagar 10.00<br /><br />Pris 1 400 kr/termin
+                Onsdagar 17.00
+                <br />
+                Lördagar 10.00
+                <br />
+                <br />
+                Pris 1 400 kr/termin
               </p>
               <h4>Anmälan</h4>
               <form className="signupForm">
@@ -109,13 +121,16 @@ export default function Page() {
                 Teknik, styrka och utomhusklättring på våren.
               </p>
               <p className="card-info">
-                Torsdagar 18.00<br />Lördagar 13.00<br /><br />Pris 1 400
-                kr/termin
+                Torsdagar 18.00
+                <br />
+                Lördagar 13.00
+                <br />
+                <br />
+                Pris 1 400 kr/termin
               </p>
               <p className="card-full">
-                Fullt den här terminen.{" "}
-                <Link href="/contact">Hör av dig</Link> så sätter vi upp dig på
-                väntelistan.
+                Fullt den här terminen. <Link href="/contact">Hör av dig</Link>{" "}
+                så sätter vi upp dig på väntelistan.
               </p>
             </div>
           </div>
@@ -128,11 +143,16 @@ export default function Page() {
               <img src="/assets/repkurs.jpg" alt="två tjejer hänger i rep" />
               <p>
                 Lär dig knyta in dig, säkra med repbroms och kolla din kompis
-                innan hen lämnar marken. Kursen avslutas med ett prov som ger dig
-                ett klätterkort som gäller på gym i hela Sverige.
+                innan hen lämnar marken. Kursen avslutas med ett prov som ger
+                dig ett klätterkort som gäller på gym i hela Sverige.
               </p>
               <p className="card-info">
-                En kväll, 18-21<br />Varannan torsdag<br /><br />Pris 450 kr
+                En kväll, 18-21
+                <br />
+                Varannan torsdag
+                <br />
+                <br />
+                Pris 450 kr
               </p>
               <h4>Anmälan</h4>
               <form className="signupForm">
@@ -166,13 +186,17 @@ export default function Page() {
                 alt="En klättrare säkrar en annan klättrare"
               />
               <p>
-                För dig som redan har klätterkort och vill ta med repet upp själv.
-                Vi går igenom klippning, fall och hur du säkrar mjukt när din
-                kompis ramlar.
+                För dig som redan har klätterkort och vill ta med repet upp
+                själv. Vi går igenom klippning, fall och hur du säkrar mjukt när
+                din kompis ramlar.
               </p>
               <p className="card-info">
-                Två kvällar, 18-21<br />Måndag och onsdag samma vecka<br /><br />Pris
-                900 kr
+                Två kvällar, 18-21
+                <br />
+                Måndag och onsdag samma vecka
+                <br />
+                <br />
+                Pris 900 kr
               </p>
               <h4>Anmälan</h4>
               <form className="signupForm">
@@ -208,12 +232,16 @@ export default function Page() {
               <img src="/assets/barnkalas.jpg" alt="kalasfirande" />
               <p>
                 Två timmar med egen instruktör, skor och selar, och ett
-                färdigdekorerat rum där ni kan äta tårta efteråt. Passar barn från
-                sex år.
+                färdigdekorerat rum där ni kan äta tårta efteråt. Passar barn
+                från sex år.
               </p>
               <p className="card-info">
-                Lördagar och söndagar<br />Upp till 12 barn<br /><br />Från 300
-                kr/barn
+                Lördagar och söndagar
+                <br />
+                Upp till 12 barn
+                <br />
+                <br />
+                Från 300 kr/barn
               </p>
               <h4>Anmälan</h4>
               <form className="signupForm">
@@ -243,11 +271,16 @@ export default function Page() {
                 alt="kollegor bouldrar tillsammans"
               />
               <p>
-                Ta med jobbet eller kompisgänget en kväll. En instruktör visar hur
-                väggen funkar och sedan klättrar ni så länge ni orkar.
+                Ta med jobbet eller kompisgänget en kväll. En instruktör visar
+                hur väggen funkar och sedan klättrar ni så länge ni orkar.
               </p>
               <p className="card-info">
-                Vardagar efter 16<br />6-20 personer<br /><br />Från 250 kr/person
+                Vardagar efter 16
+                <br />
+                6-20 personer
+                <br />
+                <br />
+                Från 250 kr/person
               </p>
               <h4>Anmälan</h4>
               <form className="signupForm">

@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element -- Keep the original image markup and CSS sizing. */
 import type { Metadata } from "next";
-import SiteHeader from "../components/site-header";
+import SiteHeader from "../components/SiteHeader";
 
 export const metadata: Metadata = { title: "Om oss - Getagrip klättergym" };
 
@@ -13,13 +13,17 @@ export default function Page() {
       <div className="page-content">
         <h1 className="about-title">
           Om
-          <img src="/assets/getagrip.svg" alt="Getagrip" className="about-logo" />
+          <img
+            src="/assets/getagrip.svg"
+            alt="Getagrip"
+            className="about-logo"
+          />
         </h1>
         <div className="textImg">
           <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
             <p className="text-intro">
-              Vi vill att klättring i Jönköping ska vara något man bara gör — inte
-              något man först måste bli tillräckligt vältränad för.
+              Vi vill att klättring i Jönköping ska vara något man bara gör —
+              inte något man först måste bli tillräckligt vältränad för.
             </p>
             <p>
               Getagrip startades 2019 av Nora och Mikael, som tröttnade på att
@@ -30,9 +34,9 @@ export default function Page() {
             </p>
             <p>
               Sedan dess har vi byggt ut två gånger. Idag har vi 1 400
-              kvadratmeter klätteryta, ett eget ledbyggarlag, yogasal och ungefär
-              tvåtusen medlemmar — från sjuåringar i barngruppen till ett gäng
-              pensionärer som tagit över tisdagsförmiddagarna.
+              kvadratmeter klätteryta, ett eget ledbyggarlag, yogasal och
+              ungefär tvåtusen medlemmar — från sjuåringar i barngruppen till
+              ett gäng pensionärer som tagit över tisdagsförmiddagarna.
             </p>
             <p>
               Det vi bryr oss mest om är hur det känns att komma in genom dörren
@@ -56,8 +60,8 @@ export default function Page() {
               <p>
                 Boulder är låga klätterväggar, där man klättar utan rep och
                 istället landar på en tjock matta. Vi har ett brett utbud av
-                problem i olika grader på väggar i alla möjliga lutningar. Lederna
-                byggs om kontinuerligt av erfarna ledbyggare
+                problem i olika grader på väggar i alla möjliga lutningar.
+                Lederna byggs om kontinuerligt av erfarna ledbyggare
               </p>
             </div>
 
@@ -78,7 +82,11 @@ export default function Page() {
               </p>
             </div>
 
-            <img src="/assets/rope.jpg" alt="repvägg innomhus" className="img-small" />
+            <img
+              src="/assets/rope.jpg"
+              alt="repvägg innomhus"
+              className="img-small"
+            />
           </div>
         </div>
 
@@ -86,8 +94,8 @@ export default function Page() {
           <h2>Hitta hit!</h2>
           <p>
             Kabelvägen 4, 553 02 Jönköping. Buss 26 stannar vid Hedenstorp, tre
-            minuters promenad bort, och det finns gratis parkering på baksidan av
-            huset. Cykelställ under tak står direkt vid entrén.
+            minuters promenad bort, och det finns gratis parkering på baksidan
+            av huset. Cykelställ under tak står direkt vid entrén.
           </p>
 
           <img src="/assets/map.png" alt="karta" className="map" />

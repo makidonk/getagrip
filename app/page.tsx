@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element -- Keep the original image markup and CSS sizing. */
 import type { Metadata } from "next";
 import Link from "next/link";
-import SiteHeader from "./components/site-header";
+import SiteHeader from "./components/SiteHeader";
 
 export const metadata: Metadata = { title: "Startsida - Getagrip klättergym" };
 
@@ -37,9 +37,9 @@ export default function Page() {
       <div className="page-content">
         <div className="slab">
           <p className="text-intro">
-            1 400 kvadratmeter vägg mitt i Jönköping. Boulder, rep och yoga under
-            samma tak — och ingen som höjer på ögonbrynen för att du aldrig har
-            klättrat förut.
+            1 400 kvadratmeter vägg mitt i Jönköping. Boulder, rep och yoga
+            under samma tak — och ingen som höjer på ögonbrynen för att du
+            aldrig har klättrat förut.
           </p>
         </div>
 
@@ -48,9 +48,10 @@ export default function Page() {
           <p>
             Du behöver ingen utrustning, ingen förkunskap och ingen kompis att
             komma med. Kom förbi i träningskläder, så fixar vi skorna och visar
-            dig hur väggen funkar. Första gången tar ungefär en timme innan du är
-            igång på egen hand.
-            <br /><br />
+            dig hur väggen funkar. Första gången tar ungefär en timme innan du
+            är igång på egen hand.
+            <br />
+            <br />
             Vi har personal i hallen hela öppettiden. Fråga dem om allt från hur
             du ska stå på en liten fotlist till var kaffet finns.
           </p>
@@ -63,8 +64,8 @@ export default function Page() {
               <p>
                 Låga väggar, tjocka mattor och inget rep. Du bestämmer själv när
                 du klättrar och när du sitter på mattan och tjafsar om hur ett
-                problem ska lösas. Vi skruvar nya leder varje vecka, så väggen ser
-                aldrig likadan ut två månader i rad.
+                problem ska lösas. Vi skruvar nya leder varje vecka, så väggen
+                ser aldrig likadan ut två månader i rad.
               </p>
             </div>
             <img
@@ -77,10 +78,10 @@ export default function Page() {
             <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
               <h2>Rep</h2>
               <p>
-                Sjutton meter vägg med topprep, autobelay och lead. Autobelayerna
-                kan du använda direkt på egen hand — vill du säkra en kompis går
-                du vår repkurs på en kväll och får ett kort som gäller i hela
-                landet.
+                Sjutton meter vägg med topprep, autobelay och lead.
+                Autobelayerna kan du använda direkt på egen hand — vill du säkra
+                en kompis går du vår repkurs på en kväll och får ett kort som
+                gäller i hela landet.
               </p>
             </div>
             <img
@@ -97,7 +98,8 @@ export default function Page() {
             Sju dagar obegränsad klättring, skor och kalk ingår, och en
             introduktion med någon ur personalen. Vill du fortsätta efteråt drar
             vi av hela summan från ditt första månadskort.
-            <br /><br />
+            <br />
+            <br />
             <Link href="/get-started">Läs hur du kommer igång</Link> eller{" "}
             <Link href="/prices">kolla priserna</Link>.
           </p>

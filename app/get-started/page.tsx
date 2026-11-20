@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element -- Keep the original image markup and CSS sizing. */
 import type { Metadata } from "next";
-import SiteHeader from "../components/site-header";
+import SiteHeader from "../components/SiteHeader";
 
 export const metadata: Metadata = { title: "Kom igång - Getagrip klättergym" };
 
@@ -25,19 +25,19 @@ export default function Page() {
             <div className="textBlock">
               <h1>Såhär funkar det!</h1>
               <p>
-                Kom förbi när som helst under öppettiderna — du behöver inte boka.
-                I receptionen löser du ditt dagspass och lånar skor. Ta med
-                träningskläder du kan röra dig i, och gärna en vattenflaska.
+                Kom förbi när som helst under öppettiderna — du behöver inte
+                boka. I receptionen löser du ditt dagspass och lånar skor. Ta
+                med träningskläder du kan röra dig i, och gärna en vattenflaska.
               </p>
               <p>
                 Innan du börjar får du en kort genomgång av någon ur personalen.
                 Vi går igenom hur du faller på mattan utan att slå dig, vad
-                färgerna på greppen betyder och vilka regler som gäller i hallen.
-                Det tar ungefär tjugo minuter och är gratis.
+                färgerna på greppen betyder och vilka regler som gäller i
+                hallen. Det tar ungefär tjugo minuter och är gratis.
               </p>
               <p>
-                Sen är det bara att klättra. Börja på de lättaste lederna även om
-                de ser enkla ut — det är där du lär dig stå på fötterna.
+                Sen är det bara att klättra. Börja på de lättaste lederna även
+                om de ser enkla ut — det är där du lär dig stå på fötterna.
                 Personalen finns i hallen hela dagen, så peta på dem så fort du
                 kör fast.
               </p>
@@ -60,9 +60,9 @@ export default function Page() {
                   <img src="/assets/arrow.svg" className="arrow" alt="pil" />
                 </summary>
                 <p>
-                  Nej. De flesta som kommer hit första gången har aldrig klättrat.
-                  Du får en genomgång av personalen när du kommer, och den räcker
-                  för att du ska kunna bouldra på egen hand.
+                  Nej. De flesta som kommer hit första gången har aldrig
+                  klättrat. Du får en genomgång av personalen när du kommer, och
+                  den räcker för att du ska kunna bouldra på egen hand.
                 </p>
               </details>
               <details name="faq">
@@ -72,7 +72,8 @@ export default function Page() {
                 </summary>
                 <p>
                   Vanliga träningskläder som du kan sträcka dig i. Undvik hårda
-                  byxor och ta av ringar och armbandsur. Långt hår sätter du upp.
+                  byxor och ta av ringar och armbandsur. Långt hår sätter du
+                  upp.
                 </p>
               </details>
               <details name="faq">
@@ -82,8 +83,8 @@ export default function Page() {
                 </summary>
                 <p>
                   Nej, du hyr klätterskor för 40 kr och kalk för 15 kr i
-                  receptionen. Har du månadskort eller 10-kort ingår både skor och
-                  kalk.
+                  receptionen. Har du månadskort eller 10-kort ingår både skor
+                  och kalk.
                 </p>
               </details>
               <details name="faq">
@@ -92,9 +93,9 @@ export default function Page() {
                   <img src="/assets/arrow.svg" className="arrow" alt="pil" />
                 </summary>
                 <p>
-                  Inte för boulder eller autobelay — det går alldeles utmärkt att
-                  komma ensam. Vill du klättra på topprep behöver ni vara två som
-                  båda har klätterkort.
+                  Inte för boulder eller autobelay — det går alldeles utmärkt
+                  att komma ensam. Vill du klättra på topprep behöver ni vara
+                  två som båda har klätterkort.
                 </p>
               </details>
               <details name="faq">

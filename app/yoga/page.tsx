@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element -- Keep the original image markup and CSS sizing. */
 import type { Metadata } from "next";
 import Link from "next/link";
-import SiteHeader from "../components/site-header";
+import SiteHeader from "../components/SiteHeader";
 
 export const metadata: Metadata = { title: "Yoga - Getagrip klättergym" };
 
@@ -57,8 +57,12 @@ export default function Page() {
                 provat yoga.
               </p>
               <p className="card-info">
-                Måndagar 07.00<br />Onsdagar 07.00<br /><br />Ingår i kortet,
-                annars 90 kr (betalas på plats)
+                Måndagar 07.00
+                <br />
+                Onsdagar 07.00
+                <br />
+                <br />
+                Ingår i kortet, annars 90 kr (betalas på plats)
               </p>
               <h4>Anmälan</h4>
               <form className="signupForm">
@@ -108,8 +112,12 @@ export default function Page() {
                 klätterdag eller när huvudet behöver vila.
               </p>
               <p className="card-info">
-                Tisdagar 18.30<br />Torsdagar 18.30<br /><br />Ingår i kortet,
-                annars 90 kr (betalas på plats)
+                Tisdagar 18.30
+                <br />
+                Torsdagar 18.30
+                <br />
+                <br />
+                Ingår i kortet, annars 90 kr (betalas på plats)
               </p>
               <h4>Anmälan</h4>
               <form className="signupForm">
@@ -163,12 +171,16 @@ export default function Page() {
               <p>
                 Ett mer dynamiskt flöde där varje rörelse följer andningen. Du
                 bygger styrka och balans samtidigt som du blir rörligare, och
-                passet har ett tydligt tempo utan att bli stressigt. Bra om du har
-                gått några pass förut och vill ta nästa steg.
+                passet har ett tydligt tempo utan att bli stressigt. Bra om du
+                har gått några pass förut och vill ta nästa steg.
               </p>
               <p className="card-info">
-                Tisdagar 07.00<br />Torsdagar 07.00<br /><br />Ingår i kortet,
-                annars 90 kr (betalas på plats)
+                Tisdagar 07.00
+                <br />
+                Torsdagar 07.00
+                <br />
+                <br />
+                Ingår i kortet, annars 90 kr (betalas på plats)
               </p>
               <h4>Anmälan</h4>
               <form className="signupForm">
@@ -216,12 +228,16 @@ export default function Page() {
               <h3>Power yoga</h3>
               <p>
                 Yogans svar på ett gympass. Högt tempo, tuffa positioner och
-                mycket styrka i bål, axlar och ben. Räkna med att bli svettig. Du
-                bör känna till grundpositionerna innan du hoppar på.
+                mycket styrka i bål, axlar och ben. Räkna med att bli svettig.
+                Du bör känna till grundpositionerna innan du hoppar på.
               </p>
               <p className="card-info">
-                Fredagar 17.30<br />Lördagar 12.00<br /><br />Ingår i kortet,
-                annars 90 kr (betalas på plats)
+                Fredagar 17.30
+                <br />
+                Lördagar 12.00
+                <br />
+                <br />
+                Ingår i kortet, annars 90 kr (betalas på plats)
               </p>
               <h4>Anmälan</h4>
               <form className="signupForm">
@@ -276,8 +292,10 @@ export default function Page() {
                 yogaerfarenhet som vill ha en utmaning och struktur.
               </p>
               <p className="card-info">
-                Söndagar 10.00<br /><br />Ingår i kortet, annars 90 kr (betalas på
-                plats)
+                Söndagar 10.00
+                <br />
+                <br />
+                Ingår i kortet, annars 90 kr (betalas på plats)
               </p>
               <h4>Anmälan</h4>
               <form className="signupForm">
