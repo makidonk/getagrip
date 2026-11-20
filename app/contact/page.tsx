@@ -9,13 +9,13 @@ export default function Page() {
   return (
     <>
       <SiteHeader activePath="/contact" />
-      <div className="below-header"></div>
-      <div className="page-content">
+      <div className="pt-[140px] min-[700px]:pt-[70px]"></div>
+      <div className="flex flex-col gap-[60px] px-5 py-10 min-[700px]:gap-[90px] min-[700px]:px-[30px] min-[700px]:py-[60px]">
         <h1>Kontakt</h1>
-        <div className="price-container">
-          <div className="priceCol">
+        <div className="flex w-full flex-col gap-5 min-[700px]:grid min-[700px]:grid-cols-[1fr_1fr_40%]">
+          <div className="flex flex-col gap-5">
             <ListItem title="Tveka inte att höra av dig!">
-              <p className="contact-links">
+              <p className="[&_a]:text-[20px] [&_a]:underline">
                 <a href="tel:+4636123456">036-12 34 56</a>
                 <br />
                 <a href="mailto:hej@getagrip.se">hej@getagrip.se</a>
@@ -26,7 +26,7 @@ export default function Page() {
               </p>
             </ListItem>
           </div>
-          <div className="priceCol">
+          <div className="flex flex-col gap-5">
             <ListItem
               title="Öppettider"
               rows={[
@@ -46,7 +46,7 @@ export default function Page() {
               ]}
             />
           </div>
-          <div className="priceCol">
+          <div className="flex flex-col gap-5">
             <ListItem title="Hitta hit">
               <p>
                 Kabelvägen 4, 553 02 Jönköping. Buss 26 stannar vid Hedenstorp,
@@ -57,7 +57,7 @@ export default function Page() {
                 <img
                   src="/assets/map.png"
                   alt="Karta till Getagrip, öppnas i Google Maps"
-                  className="map"
+                  className="w-full max-w-[600px]"
                 />
               </a>
             </ListItem>

@@ -9,25 +9,25 @@ export default function Page() {
   return (
     <>
       <SiteHeader activePath="/yoga" />
-      <div className="hero-small">
+      <div className="relative h-[50dvh] w-full overflow-hidden">
         <img
           src="/assets/yoga-hero.png"
           alt="Yogaklass i yogasalen på Getagrip"
-          className="hero-img"
+          className="size-full object-cover object-center"
         />
-        <h1 className="heroCaption">Yoga för klättrare - och alla andra</h1>
+        <h1 className="absolute inset-x-[30px] bottom-[25px] text-white">Yoga för klättrare - och alla andra</h1>
       </div>
-      <div className="page-content">
-        <p className="text-intro">
+      <div className="flex flex-col gap-[60px] px-5 py-10 min-[700px]:gap-[90px] min-[700px]:px-[30px] min-[700px]:py-[60px]">
+        <p className="max-w-[900px] text-[26px]/[1.3]">
           Klättring bygger starka fingrar och stela höfter. I yogasalen på
           övervåningen jobbar vi med det andra. Klasserna ingår i månadskort,
           10-kort och prova-på-veckan, annars kostar en klass 90 kr.
         </p>
-        <div className="cardsDisplay">
+        <div className="flex flex-col gap-5">
           <h2>Veckans klasser</h2>
-          <div className="cardGrid">
-            <div className="activityCard">
-              <div className="class-icon">
+          <div className="grid grid-cols-[1fr] gap-5 min-[700px]:grid-cols-[repeat(auto-fill,minmax(320px,1fr))]">
+            <div className="group/activity flex flex-col gap-3 rounded-[3px] transition-[background-color] duration-[250ms] ease-[ease] [&:hover]:bg-coral-tint focus-within:bg-coral-tint min-[700px]:p-[15px] [&_h3]:font-body [&_h3]:text-[26px] [&_h4]:mt-2.5 [&_h4]:font-body [&_h4]:text-[22px] [&_img]:aspect-[4/3] [&_img]:w-full [&_img]:object-cover">
+              <div className="flex aspect-[4/3] items-center justify-center p-2.5 text-coral group-[&:hover]/activity:text-sun group-focus-within/activity:text-sun [&_svg]:h-auto [&_svg]:w-full [&_svg]:overflow-visible">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="-6 -6 76 76">
                   <circle cx="32" cy="15" r="6.5" fill="currentColor" />
                   <g
@@ -56,7 +56,7 @@ export default function Page() {
                 därifrån pigg men inte slut. Passar alla, även dig som aldrig
                 provat yoga.
               </p>
-              <p className="card-info">
+              <p className="font-medium">
                 Måndagar 07.00
                 <br />
                 Onsdagar 07.00
@@ -65,7 +65,7 @@ export default function Page() {
                 Ingår i kortet, annars 90 kr (betalas på plats)
               </p>
               <h4>Anmälan</h4>
-              <form className="signupForm">
+              <form className="flex flex-col gap-2.5 [&_label]:flex [&_label]:flex-col [&_label]:gap-1 [&_label]:font-body [&_label]:text-[15px] [&_:is(input,select)]:rounded-none [&_:is(input,select)]:border [&_:is(input,select)]:border-black [&_:is(input,select)]:bg-transparent [&_:is(input,select)]:p-2 [&_:is(input,select)]:font-body [&_:is(input,select)]:text-[16px]">
                 <label>
                   Förnamn
                   <input type="text" name="fornamn" required />
@@ -89,8 +89,8 @@ export default function Page() {
               </form>
             </div>
 
-            <div className="activityCard">
-              <div className="class-icon">
+            <div className="group/activity flex flex-col gap-3 rounded-[3px] transition-[background-color] duration-[250ms] ease-[ease] [&:hover]:bg-coral-tint focus-within:bg-coral-tint min-[700px]:p-[15px] [&_h3]:font-body [&_h3]:text-[26px] [&_h4]:mt-2.5 [&_h4]:font-body [&_h4]:text-[22px] [&_img]:aspect-[4/3] [&_img]:w-full [&_img]:object-cover">
+              <div className="flex aspect-[4/3] items-center justify-center p-2.5 text-coral group-[&:hover]/activity:text-sun group-focus-within/activity:text-sun [&_svg]:h-auto [&_svg]:w-full [&_svg]:overflow-visible">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="-6 -6 76 76"
@@ -111,7 +111,7 @@ export default function Page() {
                 spänningar djupt i bindväv och leder. Perfekt efter en tung
                 klätterdag eller när huvudet behöver vila.
               </p>
-              <p className="card-info">
+              <p className="font-medium">
                 Tisdagar 18.30
                 <br />
                 Torsdagar 18.30
@@ -120,7 +120,7 @@ export default function Page() {
                 Ingår i kortet, annars 90 kr (betalas på plats)
               </p>
               <h4>Anmälan</h4>
-              <form className="signupForm">
+              <form className="flex flex-col gap-2.5 [&_label]:flex [&_label]:flex-col [&_label]:gap-1 [&_label]:font-body [&_label]:text-[15px] [&_:is(input,select)]:rounded-none [&_:is(input,select)]:border [&_:is(input,select)]:border-black [&_:is(input,select)]:bg-transparent [&_:is(input,select)]:p-2 [&_:is(input,select)]:font-body [&_:is(input,select)]:text-[16px]">
                 <label>
                   Förnamn
                   <input type="text" name="fornamn" required />
@@ -143,8 +143,8 @@ export default function Page() {
                 <button type="submit">Boka plats</button>
               </form>
             </div>
-            <div className="activityCard">
-              <div className="class-icon">
+            <div className="group/activity flex flex-col gap-3 rounded-[3px] transition-[background-color] duration-[250ms] ease-[ease] [&:hover]:bg-coral-tint focus-within:bg-coral-tint min-[700px]:p-[15px] [&_h3]:font-body [&_h3]:text-[26px] [&_h4]:mt-2.5 [&_h4]:font-body [&_h4]:text-[22px] [&_img]:aspect-[4/3] [&_img]:w-full [&_img]:object-cover">
+              <div className="flex aspect-[4/3] items-center justify-center p-2.5 text-coral group-[&:hover]/activity:text-sun group-focus-within/activity:text-sun [&_svg]:h-auto [&_svg]:w-full [&_svg]:overflow-visible">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="-6 -6 76 76"
@@ -174,7 +174,7 @@ export default function Page() {
                 passet har ett tydligt tempo utan att bli stressigt. Bra om du
                 har gått några pass förut och vill ta nästa steg.
               </p>
-              <p className="card-info">
+              <p className="font-medium">
                 Tisdagar 07.00
                 <br />
                 Torsdagar 07.00
@@ -183,7 +183,7 @@ export default function Page() {
                 Ingår i kortet, annars 90 kr (betalas på plats)
               </p>
               <h4>Anmälan</h4>
-              <form className="signupForm">
+              <form className="flex flex-col gap-2.5 [&_label]:flex [&_label]:flex-col [&_label]:gap-1 [&_label]:font-body [&_label]:text-[15px] [&_:is(input,select)]:rounded-none [&_:is(input,select)]:border [&_:is(input,select)]:border-black [&_:is(input,select)]:bg-transparent [&_:is(input,select)]:p-2 [&_:is(input,select)]:font-body [&_:is(input,select)]:text-[16px]">
                 <label>
                   Förnamn
                   <input type="text" name="fornamn" required />
@@ -206,8 +206,8 @@ export default function Page() {
                 <button type="submit">Boka plats</button>
               </form>
             </div>
-            <div className="activityCard">
-              <div className="class-icon">
+            <div className="group/activity flex flex-col gap-3 rounded-[3px] transition-[background-color] duration-[250ms] ease-[ease] [&:hover]:bg-coral-tint focus-within:bg-coral-tint min-[700px]:p-[15px] [&_h3]:font-body [&_h3]:text-[26px] [&_h4]:mt-2.5 [&_h4]:font-body [&_h4]:text-[22px] [&_img]:aspect-[4/3] [&_img]:w-full [&_img]:object-cover">
+              <div className="flex aspect-[4/3] items-center justify-center p-2.5 text-coral group-[&:hover]/activity:text-sun group-focus-within/activity:text-sun [&_svg]:h-auto [&_svg]:w-full [&_svg]:overflow-visible">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="-6 -6 76 76"
@@ -231,7 +231,7 @@ export default function Page() {
                 mycket styrka i bål, axlar och ben. Räkna med att bli svettig.
                 Du bör känna till grundpositionerna innan du hoppar på.
               </p>
-              <p className="card-info">
+              <p className="font-medium">
                 Fredagar 17.30
                 <br />
                 Lördagar 12.00
@@ -240,7 +240,7 @@ export default function Page() {
                 Ingår i kortet, annars 90 kr (betalas på plats)
               </p>
               <h4>Anmälan</h4>
-              <form className="signupForm">
+              <form className="flex flex-col gap-2.5 [&_label]:flex [&_label]:flex-col [&_label]:gap-1 [&_label]:font-body [&_label]:text-[15px] [&_:is(input,select)]:rounded-none [&_:is(input,select)]:border [&_:is(input,select)]:border-black [&_:is(input,select)]:bg-transparent [&_:is(input,select)]:p-2 [&_:is(input,select)]:font-body [&_:is(input,select)]:text-[16px]">
                 <label>
                   Förnamn
                   <input type="text" name="fornamn" required />
@@ -263,8 +263,8 @@ export default function Page() {
                 <button type="submit">Boka plats</button>
               </form>
             </div>
-            <div className="activityCard">
-              <div className="class-icon">
+            <div className="group/activity flex flex-col gap-3 rounded-[3px] transition-[background-color] duration-[250ms] ease-[ease] [&:hover]:bg-coral-tint focus-within:bg-coral-tint min-[700px]:p-[15px] [&_h3]:font-body [&_h3]:text-[26px] [&_h4]:mt-2.5 [&_h4]:font-body [&_h4]:text-[22px] [&_img]:aspect-[4/3] [&_img]:w-full [&_img]:object-cover">
+              <div className="flex aspect-[4/3] items-center justify-center p-2.5 text-coral group-[&:hover]/activity:text-sun group-focus-within/activity:text-sun [&_svg]:h-auto [&_svg]:w-full [&_svg]:overflow-visible">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="-6 -6 76 76"
@@ -291,14 +291,14 @@ export default function Page() {
                 framsteg över tid, men serien tar tid att lära sig. För dig med
                 yogaerfarenhet som vill ha en utmaning och struktur.
               </p>
-              <p className="card-info">
+              <p className="font-medium">
                 Söndagar 10.00
                 <br />
                 <br />
                 Ingår i kortet, annars 90 kr (betalas på plats)
               </p>
               <h4>Anmälan</h4>
-              <form className="signupForm">
+              <form className="flex flex-col gap-2.5 [&_label]:flex [&_label]:flex-col [&_label]:gap-1 [&_label]:font-body [&_label]:text-[15px] [&_:is(input,select)]:rounded-none [&_:is(input,select)]:border [&_:is(input,select)]:border-black [&_:is(input,select)]:bg-transparent [&_:is(input,select)]:p-2 [&_:is(input,select)]:font-body [&_:is(input,select)]:text-[16px]">
                 <label>
                   Förnamn
                   <input type="text" name="fornamn" required />
@@ -323,8 +323,8 @@ export default function Page() {
           </div>
         </div>
 
-        <div className="slab">
-          <p className="text-intro">
+        <div className="flex w-fit items-center justify-center self-center rounded-[30px] bg-coral p-5">
+          <p className="max-w-[900px] text-[26px]/[1.3]">
             Hellre upp på väggen?{" "}
             <Link href="/groups">Se våra grupper och kurser</Link>.
           </p>

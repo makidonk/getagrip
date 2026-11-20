@@ -9,19 +9,19 @@ export default function Page() {
     <>
       <SiteHeader activePath="/about" />
 
-      <div className="below-header"></div>
-      <div className="page-content">
-        <h1 className="about-title">
+      <div className="pt-[140px] min-[700px]:pt-[70px]"></div>
+      <div className="flex flex-col gap-[60px] px-5 py-10 min-[700px]:gap-[90px] min-[700px]:px-[30px] min-[700px]:py-[60px]">
+        <h1 className="flex h-20 items-center gap-5 text-[50px]">
           Om
           <img
             src="/assets/getagrip.svg"
             alt="Getagrip"
-            className="about-logo"
+            className="h-full"
           />
         </h1>
-        <div className="textImg">
-          <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
-            <p className="text-intro">
+        <div className="flex flex-col gap-[15px] min-[700px]:grid min-[700px]:grid-cols-[1fr_40%]">
+          <div className="flex flex-col gap-5">
+            <p className="max-w-[900px] text-[26px]/[1.3]">
               Vi vill att klättring i Jönköping ska vara något man bara gör —
               inte något man först måste bli tillräckligt vältränad för.
             </p>
@@ -49,13 +49,13 @@ export default function Page() {
           <img
             src="/assets/omoss.png"
             alt="Bild på grundarna av Getagrip utomhus"
-            className="about-img"
+            className="w-full self-center"
           />
         </div>
 
-        <div className="display">
-          <div className="textImg-col">
-            <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+        <div className="flex flex-col gap-[30px] min-[700px]:grid min-[700px]:grid-cols-[1fr_1fr] min-[700px]:gap-5">
+          <div className="flex flex-col gap-[15px]">
+            <div className="flex flex-col gap-2.5">
               <h2>Bouldering</h2>
               <p>
                 Boulder är låga klätterväggar, där man klättar utan rep och
@@ -68,11 +68,11 @@ export default function Page() {
             <img
               src="/assets/bouldering.jpg"
               alt="boulderingvägg innomhus"
-              className="img-small"
+              className="aspect-[4/3] w-full object-cover"
             />
           </div>
-          <div className="textImg-col">
-            <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+          <div className="flex flex-col gap-[15px]">
+            <div className="flex flex-col gap-2.5">
               <h2>Repklättring</h2>
               <p>
                 På våra repväggar kommer du kunna klättra på topprep, autobelay
@@ -85,12 +85,12 @@ export default function Page() {
             <img
               src="/assets/rope.jpg"
               alt="repvägg innomhus"
-              className="img-small"
+              className="aspect-[4/3] w-full object-cover"
             />
           </div>
         </div>
 
-        <div className="textImg-col">
+        <div className="flex flex-col gap-[15px]">
           <h2>Hitta hit!</h2>
           <p>
             Kabelvägen 4, 553 02 Jönköping. Buss 26 stannar vid Hedenstorp, tre
@@ -98,7 +98,7 @@ export default function Page() {
             av huset. Cykelställ under tak står direkt vid entrén.
           </p>
 
-          <img src="/assets/map.png" alt="karta" className="map" />
+          <img src="/assets/map.png" alt="karta" className="w-full max-w-[600px]" />
         </div>
       </div>
     </>

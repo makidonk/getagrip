@@ -1,26 +1,54 @@
-@import "tailwindcss";
+﻿@import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-sun: #fee880;
+  --color-coral: #f47c51;
+  --color-coral-tint: #f47c51c6;
+  --font-body: "Source Serif 4", serif;
+  --font-display: "Londrina Solid", sans-serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    interpolate-size: allow-keywords;
   }
-}
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  a {
+    @apply font-display font-normal text-black no-underline;
+  }
+
+  a:hover {
+    @apply cursor-pointer font-black;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply m-0 font-display font-normal;
+  }
+
+  h1 {
+    @apply text-[clamp(2.5rem,7vw,4.5rem)] leading-[0.95];
+  }
+
+  h2 {
+    @apply text-[clamp(1.75rem,4vw,2.5rem)] leading-none;
+  }
+
+  p {
+    @apply m-0 max-w-[700px] font-body font-light leading-[1.65];
+  }
+
+  button {
+    @apply inline-block cursor-pointer self-start rounded-[30px] border border-black bg-sun px-[18px] py-2 font-display text-[20px] text-black transition-[background-color] duration-[250ms] ease-[ease];
+  }
+
+  button:hover {
+    @apply bg-black text-sun;
+  }
+
+  input:focus-visible,
+  select:focus-visible {
+    @apply outline-2 outline-black;
+  }
 }

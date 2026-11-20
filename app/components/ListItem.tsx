@@ -16,21 +16,21 @@ export default function ListItem({
   divider = false,
 }: ListItemProps) {
   return (
-    <div className="priceBox">
+    <div className="flex flex-col gap-2.5">
       <h2>{title}</h2>
       {rows && rows.length > 0 && (
-        <ul className="priceList">
+        <ul className="list-none">
           {rows.map(({ title, value }) => (
-            <li className="pricelist-item" key={title}>
+            <li className="flex items-center justify-between" key={title}>
               <p>{title}</p>
-              <p className="value">{value}</p>
+              <p>{value}</p>
             </li>
           ))}
         </ul>
       )}
       {longText != null && <p>{longText}</p>}
       {children}
-      {divider && <div className="line"></div>}
+      {divider && <div className="h-px w-full bg-black"></div>}
     </div>
   );
 }

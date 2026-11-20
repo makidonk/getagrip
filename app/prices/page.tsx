@@ -8,11 +8,11 @@ export default function Page() {
   return (
     <>
       <SiteHeader activePath="/prices" />
-      <div className="below-header"></div>
-      <div className="page-content">
+      <div className="pt-[140px] min-[700px]:pt-[70px]"></div>
+      <div className="flex flex-col gap-[60px] px-5 py-10 min-[700px]:gap-[90px] min-[700px]:px-[30px] min-[700px]:py-[60px]">
         <h1>Prislista</h1>
-        <div className="price-container">
-          <div className="priceCol">
+        <div className="flex w-full flex-col gap-5 min-[700px]:grid min-[700px]:grid-cols-[1fr_1fr_40%]">
+          <div className="flex flex-col gap-5">
             <ListItem
               title="Dagspass"
               rows={[
@@ -41,7 +41,7 @@ export default function Page() {
               divider
             />
           </div>
-          <div className="priceCol">
+          <div className="flex flex-col gap-5">
             <ListItem
               title="Yogaklasser"
               rows={[{ title: "klass", value: "90kr" }]}
@@ -67,7 +67,7 @@ export default function Page() {
               longText="Skor och kalk ingår i månadskort, 10-kort, och prova-på-veckan."
             />
           </div>
-          <div className="priceCol">
+          <div className="flex flex-col gap-5">
             <ListItem
               title="Villkor"
               divider
